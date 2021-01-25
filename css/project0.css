@@ -6,13 +6,11 @@ html body {
 }
 .begin {
     display: flex;
-    /*float: right;*/
     justify-content: flex-end;
     padding-right: 30px;
     text-align: right;
     font-size: 13px;
     margin-top: 15px;
-    /*white-space: nowrap;*/
 }
 .links1 {
     color:black;
@@ -87,12 +85,11 @@ html body {
 
 }
 #advlogo {
-
     color: #d93025;
     font-size: 20px;
     margin: 25px 35px;
-        
 }
+
 #advsrch {
     font-family: arial,sans-serif;
 }
@@ -107,59 +104,55 @@ html body {
     background-color: rgb(241, 241, 241);
 }
 
-#find {
-    margin: 40px 35px 10px 35px;   
-    display: flex;
+.find {
+    font-size: 16px;
 }
-#middle {
-    float: left;
-    display: inline-block;
-    min-width: 167px;
-    min-height: 41px;
-    vertical-align: middle;
-    width: 46%;
-}
+
 #text2 {
     font-size: 13px;
     font-weight: 700;
     color: #777;
 }
-#outerbox {
-    width:auto;
-    clear: both;
-    /*background-color: lightgray;*/
+
+.tble {
+    display: table;
+    border-spacing: 15px;
+    padding-left: 15px;
+    width: 100%;
+    position: relative;
 }
 .rows{
+   display: table-row;
    width: 100%;
    clear: both;
-   padding-bottom: 30px;
 }
+
 .label {
+   display: table-column;
    float: left;
-   width: 13%;
-   margin-left: 25px;
-   vertical-align: middle;
-   padding: 10px 10px;
-   font-size:small;
+   width:15%;
+   font-size: small;
 }
 .txtbox {
-    
+    display: table-column;
+    float: left;
+    width:40%;
 }
 .txtbox input {
-   
-    float: left;
-    width: 38%;
     border-radius: 1px;
     border: 1px solid #d9d9d9;
     border-top: 1px solid #c0c0c0;
     font-size: 13px;
     height: 25px;
-    padding: 1px 8px;
+    width: 95%;  
 }
 .desc {
     font-size:11px;
-    white-space: nowrap;
+    display: table-column;
+    float: left;
+    width:27%;
 }
+
 .desc2 {
     color: #666;
     font-family: monospace;
@@ -167,13 +160,12 @@ html body {
     white-space: pre;
 }
 .sbmtbutn {
-    float: right;
-    display: inline-block;
     min-width: 167px;
     min-height: 41px;
-    vertical-align: middle;
-    width: 50%;
+    text-align: right;
+    width: 54%;
 }
+
 .sbmtbutn input {
     background-color: #4d90fe;
     color: #fff;
@@ -188,4 +180,7 @@ html body {
     outline: 0;
     padding:0px 12px;
 }
-
+.sbmtbutn input:hover {
+    background-image: -webkit-linear-gradient(top,#337cf2,#4787ed);
+    box-sizing: border-box;
+}

@@ -10,76 +10,83 @@
         </div>
 
         <div id="advlogo">   <!--advanced search logo-->
-            <label style="margin-left:10px"> Advanced Search</label>
+            <label> Advanced Search</label>
         </div>
 
-        <hr color="#ebebeb">
+        <hr color="#ebebeb"> 
 
-        <div id="find">    <!--find text-->
-            <div>Find pages with...</div>
-            <div id="middle"></div>
-            <div id="text2">To do this in the search box</div>
-        </div>
+        <form action="https://google.com/search" method="GET">
 
-        <form action="https://google.com/search" method="GET" id="outerbox">
-         
-            <div class="rows">
-                <div class="label">
-                    <label>all these words: </label>
-                </div>
-                <div class="txtbox">
-                    <input type="text" name="as_q">
-                </div>
-                <div class="desc">
-                    Type the important words: <span class="desc2"> tricolor rat terrier</span>
-                                      
-                </div>
-            </div>
+            <div class="tble"> <!--table-->
             
-            <div class="rows">
-                <div class="label">
-                    <label>this exact word or phrase: </label>
+                <div class="rows">    <!--find text-->
+                    <div class="label">
+                        <label class="find">Find pages with...</label>
+                    </div>
+                    <div class="txtbox">&nbsp;
+                    </div>
+                    <div class="desc">
+                        <label id="text2">To do this in the search box</label>
+                    </div>
                 </div>
-                <div class="txtbox">
-                    <input type="text" name="as_epq">
+                <div class="rows">    <!--find all these words-->
+                    <div class="label">
+                        <label>all these words: </label>
+                    </div>
+                    <div class="txtbox">
+                        <input type="text" name="as_q">
+                    </div>
+                    <div class="desc">
+                        Type the important words: <span class="desc2"> tricolor rat terrier</span>                      
+                    </div>
                 </div>
-                <div class="desc">
-                    Put exact words in quotes: <span class="desc2"> "rat terrier"</span>                   
+                
+                <div class="rows">      <!--find exact words-->
+                    <div class="label">
+                        <label>this exact word or phrase: </label>
+                    </div>
+                    <div class="txtbox">
+                        <input type="text" name="as_epq">
+                    </div>
+                    <div class="desc">
+                        Put exact words in quotes: <span class="desc2"> "rat terrier"</span>                   
+                    </div>
                 </div>
-            </div>
-            
-            <div class="rows">
-                <div class="label">
-                    <label>any of these words: </label>
+                
+                <div class="rows">       <!--find any words-->
+                    <div class="label">
+                        <label>any of these words: </label>
+                    </div>
+                    <div class="txtbox">
+                        <input type="text" name="as_oq">
+                    </div>
+                    <div class="desc">
+                        Type OR between all the words you want: <span class="desc2"> miniature OR standard</span>                    
+                    </div>
                 </div>
-                <div class="txtbox">
-                    <input type="text" name="as_oq">
+    
+                <div class="rows">      <!--None words-->
+                    <div class="label">
+                        <label>none of these words: </label>
+                    </div>
+                    <div class="txtbox">
+                        <input type="text" name="as_eq">
+                    </div>
+                    <div class="desc">
+                        Put a minus sign just before words you don't want: <span class="desc2"> -rodent, -"Jack Russell"</span>                    
+                    </div>
                 </div>
-                <div class="desc">
-                    Type OR between all the words you want: <span class="desc2"> miniature OR standard</span>                    
+                
+                <!--Hidden input fields-->
+                <input type="hidden" name="as_qdr" value="all">
+                <input type="hidden" name="as_occt" value="any">
+                <input type="hidden" name="safe" value="images">
+                
+                <div class="sbmtbutn">  <!--Advanced Search button-->
+                    <input type="submit" name="advancedsearch" value="Advanced Search">
                 </div>
-            </div>
-
-            <div class="rows">
-                <div class="label">
-                    <label>none of these words: </label>
-                </div>
-                <div class="txtbox">
-                    <input type="text" name="as_eq">
-                </div>
-                <div class="desc">
-                    Put a minus sign just before words you don't want: <span class="desc2"> -rodent, -"Jack Russell"</span>                    
-                </div>
-            </div>
-            
-            <!--Hidden input fields-->
-            <input type="hidden" name="as_qdr" value="all">
-            <input type="hidden" name="as_occt" value="any">
-            <input type="hidden" name="safe" value="images">
-            
-            <div class="sbmtbutn">
-                <input type="submit" name="advancedsearch" value="Advanced Search">
             </div>
         </form>
+        <hr color="#ebebeb">
     </body>
 </html>
